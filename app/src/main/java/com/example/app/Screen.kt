@@ -98,6 +98,7 @@ fun RowView(
     preference:Preferences,
     modifier: Modifier = Modifier,
 ){ var checkedState by remember{ mutableStateOf(false) }
+    val textSize=10.dp
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -110,7 +111,7 @@ fun RowView(
     ){
         Text(
             stringResource(preference.leftName),
-            modifier = Modifier
+            modifier = Modifier.size(textSize)
             )
         Spacer(modifier = Modifier.weight(1.0f))
        if(preference.withSwitch) {
