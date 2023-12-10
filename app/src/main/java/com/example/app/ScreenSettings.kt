@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -26,7 +25,6 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
-
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -113,9 +111,7 @@ private fun TextRow(preference: Preferences) {
             content = {
                 Text(
                     text = stringResource(id = preference.rightName),
-                    Modifier
-                        .padding(10.dp)
-                        .alpha(0.75f)
+                    Modifier.padding(10.dp).alpha(0.75f)
                 )
             }
         )
@@ -172,7 +168,7 @@ private fun RowMaker(
 
         Text(
             stringResource(preference.leftName),
-            fontSize = 15.sp,
+            fontSize=15.sp,
             modifier = Modifier
         )
 
